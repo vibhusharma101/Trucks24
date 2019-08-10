@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trucks24 Booking Form</title>
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="about-logo" href="images/about-logo.png"sizes="32x32">
+  <link rel="shortcut icon" type="image/ico" href="images/fevicon.ico"sizes="32x32" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="css/booking/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Trucks24</span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+          <div class="col-xs-12 hidden-sm col-md-5">
+              <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                  <img id="optionalstuff"src="images/booking_image.png" alt="" width="125%" height="125%">
+              </figure>
+          </div>
+        <h3>Download our Trucks24 App and Enjoy additional features like 24/7 Live Tracking, Complimentary Insurance and Many More.</h3>
+        <a class="bttn-white wow fadeInUp"target="_blank"href="freight-transportation-app.html">Read More</a>
+      </div>
+      <div class="contact">
+        <h1>Truck Booking Form</h1>
+        <div class="alert">We've Received Your Booking Request. We will call you Shortly. </div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Mobile Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p>
+            <label>Load Pickup Location</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Load Destination</label>
+            <input type="text" name="email" id="email" required>
+          </p>
+          
+          <p>
+              <label>Truck Type</label>
+              <div class="form_custom_radio">
+                  <div class="inputGroup a">
+                      <input id="student" name="truck_type" type="radio" class="radio_input" value="Open" required/>
+                      <label for="student" class="custom_radio_label">Open Truck</label>
+                  </div>
+                  <div class="inputGroup b">
+                      <input id="teacher" name="truck_type" type="radio" class="radio_input" value="Container" required/>
+                      <label for="teacher" class="custom_radio_label">Container</label>
+                  </div>
+                  <div class="inputGroup c">
+                      <input id="corporate" name="truck_type" type="radio" class="radio_input" value="Trailer" required/>
+                      <label for="corporate" class="custom_radio_label">Trailer</label>
+                  </div>
+              </div>
+          </p>
+          <p>
+              <label>Truck Capacity</label>
+              <div class="cc-selector-2">
+                 <input id="visa2" type="radio" name="creditcard" value="15 Ton" />
+                 <label class="drinkcard-cc visa" for="visa2">15 Ton Truck</label>
+                 <input id="mastercard2" type="radio" name="creditcard" value="21 Ton" />
+                 <label class="drinkcard-cc mastercard"for="mastercard2">21 Ton Truck</label>
+                 <input id="rupay2" type="radio" name="creditcard" value="25 Ton" />
+                 <label class="drinkcard-cc rupay"for="rupay2">25 Ton Truck</label>
+             </div>
+          </p>
+
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="js/booking/main.js"></script>
+</body>
+</html>

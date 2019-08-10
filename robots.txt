@@ -1,0 +1,6 @@
+# trucks24.in/
+
+User-agent: *
+
+Disallow: /paytm/
+
